@@ -1,6 +1,7 @@
 from typing import List
 from app.models import Order
 from fastapi import APIRouter, Depends
+from sqlalchemy.orm import Session
 from fastapi.security import OAuth2PasswordBearer
 from app.schemas import OrderOut, OrderCreate, OrderItemOut, OrderItemCreate
 from app import crud
